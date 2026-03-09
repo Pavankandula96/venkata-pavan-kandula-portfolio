@@ -1,64 +1,113 @@
-.details-grid{
+body{
+margin:0;
+font-family:Arial;
+color:white;
+background:linear-gradient(-45deg,#020617,#0f172a,#020617,#1e293b);
+background-size:400% 400%;
+animation:bg 15s ease infinite;
+}
+
+@keyframes bg{
+0%{background-position:0% 50%}
+50%{background-position:100% 50%}
+100%{background-position:0% 50%}
+}
+
+.hero{
+text-align:center;
+padding:120px 20px;
+}
+
+.hero h1{
+font-size:48px;
+}
+
+.typing{
+color:#38bdf8;
+}
+
+.buttons{
+margin-top:30px;
+}
+
+.btn{
+background:#22c55e;
+padding:12px 25px;
+border-radius:30px;
+color:white;
+text-decoration:none;
+margin:10px;
+transition:0.3s;
+}
+
+.btn:hover{
+transform:scale(1.1);
+box-shadow:0 0 15px #22c55e;
+}
+
+.btn-outline{
+border:2px solid #38bdf8;
+padding:12px 25px;
+border-radius:30px;
+color:#38bdf8;
+text-decoration:none;
+}
+
+section{
+padding:80px 20px;
+text-align:center;
+}
+
+.grid{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:25px;
 max-width:900px;
 margin:auto;
 }
 
-.detail-card{
+.card{
 background:#1e293b;
-padding:20px;
+padding:25px;
 border-radius:10px;
 transition:0.3s;
 }
 
-.detail-card:hover{
-transform:translateY(-5px);
+.card:hover{
+transform:translateY(-10px);
 box-shadow:0 0 15px #38bdf8;
 }
 
-.experience-card{
+.experience{
 background:#1e293b;
 max-width:800px;
 margin:auto;
-padding:25px;
+padding:30px;
 border-radius:10px;
 text-align:left;
 }
 
-.experience-card li{
-margin:10px 0;
-}
-
-.project-card{
+.project{
 background:#1e293b;
 padding:20px;
 border-radius:10px;
 transition:0.3s;
 }
 
-.project-card:hover{
-transform:translateY(-5px);
+.project:hover{
+transform:scale(1.05);
 box-shadow:0 0 15px #22c55e;
 }
 
-.project-img{
+.project img{
 width:100%;
-margin-top:15px;
 border-radius:8px;
+margin-top:10px;
 }
 
-.project-card h4{
-margin-top:20px;
-color:#38bdf8;
-}
-
-.project-card a{
+.project a{
+display:inline-block;
+margin-top:10px;
 color:#22c55e;
 text-decoration:none;
-}
-
-.project-card a:hover{
-text-decoration:underline;
 }
