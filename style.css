@@ -30,3 +30,23 @@ text-align:left;
 .experience-card li{
 margin:10px 0;
 }
+
+.project-img{
+width:100%;
+margin-top:15px;
+border-radius:8px;
+}
+
+.project-card h4{
+margin-top:20px;
+color:#38bdf8;
+}
+
+.project-card a{
+color:#22c55e;
+text-decoration:none;
+}
+
+.project-card a:hover{
+text-decoration:underline;
+}
