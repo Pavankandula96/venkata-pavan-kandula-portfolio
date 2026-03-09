@@ -1,31 +1,45 @@
-const text = [
+const words = [
 "DevOps Engineer",
 "AWS • Kubernetes • Docker",
 "Automation Enthusiast"
 ]
 
-let count = 0
-let index = 0
-let currentText = ""
-let letter = ""
+let i = 0
+let j = 0
+let current = ""
+let isDeleting = false
 
 function type(){
 
-if(count === text.length){
-count = 0
+current = words[i]
+
+if(!isDeleting){
+document.querySelector(".typing").textContent =
+current.substring(0,j+1)
+j++
+
+if(j === current.length){
+isDeleting = true
+setTimeout(type,1000)
+return
 }
 
-currentText = text[count]
-letter = currentText.slice(0,++index)
+}else{
 
-document.querySelector(".typing").textContent = letter
+document.querySelector(".typing").textContent =
+current.substring(0,j-1)
+j--
 
-if(letter.length === currentText.length){
-count++
-index = 0
+if(j === 0){
+isDeleting = false
+i++
+if(i === words.length){ i = 0 }
+}
+
 }
 
 setTimeout(type,100)
+
 }
 
 type()
