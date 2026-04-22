@@ -85,12 +85,22 @@ section {
   gap: 20px;
 }
 
+.project a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 8px 15px;
+  background: #38bdf8;
+  color: #020617;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
 .section-title {
   margin-top: 30px;
   color: #38bdf8;
 }
 
-/* Certification Styling */
+/* Certification */
 .cert-card {
   text-align: center;
 }
@@ -149,8 +159,7 @@ footer {
 <a href="https://www.linkedin.com/in/venkata-pavan-kandula" target="_blank" class="btn-outline">LinkedIn</a>
 
 <a href="https://pavankandula96.github.io/venkata-pavan-kandula-portfolio/assets/Venkata_Pavan_Resume.pdf" 
-   target="_blank" 
-   class="btn">
+   target="_blank" class="btn">
 Download Resume
 </a>
 </div>
@@ -185,23 +194,52 @@ AWS • Kubernetes • Docker • Terraform • Jenkins • GitHub Actions • L
 </div>
 </section>
 
+<!-- ✅ PROJECTS -->
 <section id="projects">
 <h2>Projects</h2>
 
+<h3 class="section-title">Professional Projects</h3>
 <div class="grid">
-<div class="card">
+
+<div class="card project">
 <h4>Enterprise CI/CD Platform</h4>
-<p>Built scalable CI/CD pipelines using Jenkins & GitHub Actions.</p>
+<p>
+Designed scalable CI/CD pipelines using Jenkins and GitHub Actions for production workloads.
+</p>
 </div>
 
-<div class="card">
+<div class="card project">
 <h4>Infrastructure Automation</h4>
-<p>Provisioned AWS infra using Terraform, reducing manual work by 80%.</p>
+<p>
+Provisioned AWS infrastructure using Terraform, reducing manual effort by 80%.
+</p>
 </div>
+
+</div>
+
+<h3 class="section-title">Personal Projects</h3>
+<div class="grid">
+
+<div class="card project">
+<h4>3-Tier Kubernetes Application</h4>
+<p>
+Built and deployed microservices using Docker, Kubernetes (EKS), and AWS.
+</p>
+<a href="https://github.com/Pavankandula96" target="_blank">View Code</a>
+</div>
+
+<div class="card project">
+<h4>CI/CD Pipeline Automation</h4>
+<p>
+Automated deployment pipeline using Jenkins, Docker, and GitHub.
+</p>
+<a href="https://github.com/Pavankandula96" target="_blank">View Code</a>
+</div>
+
 </div>
 </section>
 
-
+<!-- ✅ CERTIFICATIONS -->
 <section id="certifications">
 <h2>Certifications</h2>
 
@@ -218,10 +256,6 @@ AWS • Kubernetes • Docker • Terraform • Jenkins • GitHub Actions • L
 <p class="cert-date">
 Issued: April 18, 2026<br>
 Valid Till: April 18, 2029
-</p>
-
-<p>
-Advanced certification demonstrating expertise in CI/CD, automation, monitoring, and AWS infrastructure.
 </p>
 
 <a href="https://www.credly.com/badges/8d53ab72-a454-4977-829e-0dfb6bee6a44/public_url" 
