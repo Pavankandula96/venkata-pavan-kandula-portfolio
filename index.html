@@ -19,6 +19,7 @@ nav {
   background: #020617;
   padding: 15px;
   text-align: center;
+  z-index: 1000;
 }
 
 nav a {
@@ -71,6 +72,11 @@ section {
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .grid {
@@ -83,10 +89,11 @@ section {
   display: inline-block;
   margin-top: 10px;
   padding: 8px 15px;
-  background: #38bdf8;
+  background: #22c55e;
   color: #020617;
   border-radius: 5px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .section-title {
@@ -112,12 +119,13 @@ footer {
 <a href="#skills">Skills</a>
 <a href="#experience">Experience</a>
 <a href="#projects">Projects</a>
+<a href="#certifications">Certifications</a>
 <a href="#contact">Contact</a>
 </nav>
 
 <section class="hero">
 <h1>Venkata Pavan Kandula</h1>
-<h2>DevOps Engineer II | AWS • Kubernetes • CI/CD</h2>
+<h2>DevOps Engineer II | AWS • Kubernetes • CI/CD • Terraform</h2>
 <p>Building scalable cloud systems & automated pipelines</p>
 
 <div class="buttons">
@@ -125,14 +133,11 @@ footer {
 <a href="https://github.com/Pavankandula96" target="_blank" class="btn-outline">GitHub</a>
 <a href="https://www.linkedin.com/in/venkata-pavan-kandula" target="_blank" class="btn-outline">LinkedIn</a>
 
-<!-- ✅ FIXED RESUME BUTTON -->
-<a href="https://pavankandula96.github.io/venkata-pavan-kandula-portfolio/assets/resume.pdf" 
+<a href="https://pavankandula96.github.io/venkata-pavan-kandula-portfolio/assets/Venkata_Pavan_Resume.pdf" 
    target="_blank" 
-   class="btn" 
-   download>
+   class="btn">
 Download Resume
 </a>
-
 </div>
 </section>
 
@@ -173,7 +178,7 @@ AWS • Kubernetes • Docker • Terraform • Jenkins • GitHub Actions • L
 
 <div class="card project">
 <h4>Enterprise CI/CD Platform</h4>
-<p>Designed scalable CI/CD pipelines for production workloads using Jenkins and GitHub Actions.</p>
+<p>Designed scalable CI/CD pipelines using Jenkins and GitHub Actions.</p>
 </div>
 
 <div class="card project">
@@ -199,7 +204,33 @@ AWS • Kubernetes • Docker • Terraform • Jenkins • GitHub Actions • L
 </div>
 
 </div>
+</section>
 
+<!-- ✅ CERTIFICATION SECTION -->
+<section id="certifications">
+<h2>Certifications</h2>
+
+<div class="grid">
+
+<div class="card project">
+<h4>AWS Certified DevOps Engineer – Professional</h4>
+
+<p>
+Issued: April 18, 2026 <br>
+Valid Till: April 18, 2029
+</p>
+
+<p>
+Advanced certification validating expertise in CI/CD automation, infrastructure as code, monitoring, and AWS cloud operations.
+</p>
+
+<a href="https://www.credly.com/badges/8d53ab72-a454-4977-829e-0dfb6bee6a44/public_url" target="_blank">
+Verify Credential
+</a>
+
+</div>
+
+</div>
 </section>
 
 <section id="contact">
