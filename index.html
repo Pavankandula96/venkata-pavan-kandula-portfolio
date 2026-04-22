@@ -6,170 +6,175 @@
 <title>Venkata Pavan Kandula | DevOps Engineer</title>
 
 <style>
-:root {
-  --bg:#0f172a;
-  --card:#1e293b;
-  --accent:#38bdf8;
-  --accent2:#22c55e;
-  --text:#e2e8f0;
+html {
+  scroll-behavior: smooth;
 }
 
-html { scroll-behavior:smooth; }
-
 body {
-  margin:0;
-  font-family:Segoe UI, sans-serif;
-  background:var(--bg);
-  color:var(--text);
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
 }
 
 /* NAV */
 nav {
-  position:fixed;
-  width:100%;
-  background:rgba(2,6,23,0.7);
-  backdrop-filter:blur(8px);
-  padding:10px;
-  text-align:center;
-  border-bottom:1px solid rgba(56,189,248,0.2);
-  z-index:1000;
+  position: fixed;
+  width: 100%;
+  background: rgba(2, 6, 23, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 12px;
+  text-align: center;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(56,189,248,0.2);
 }
 
 nav a {
-  color:var(--accent);
-  margin:0 10px;
-  text-decoration:none;
-  font-size:14px;
+  color: #38bdf8;
+  margin: 0 12px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #22d3ee;
 }
 
 /* SECTION */
 section {
-  padding:55px 20px;
-  max-width:1100px;
-  margin:auto;
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
 }
 
 /* HERO */
 .hero {
-  text-align:center;
-  padding-top:100px;
+  text-align: center;
+  padding-top: 100px;
 }
 
 .hero h1 {
-  font-size:38px;
-  background:linear-gradient(90deg,#38bdf8,#22c55e);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  font-size: 36px;
 }
 
-.hero p { opacity:0.8; }
+.hero h2 {
+  color: #38bdf8;
+  font-size: 18px;
+}
 
 /* BUTTONS */
 .buttons {
-  margin-top:15px;
-  display:flex;
-  justify-content:center;
-  gap:10px;
-  flex-wrap:wrap;
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.btn, .btn-outline {
+  padding: 10px 18px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
 .btn {
-  background:linear-gradient(135deg,#38bdf8,#22c55e);
-  padding:10px 16px;
-  border-radius:6px;
-  color:#020617;
-  text-decoration:none;
-  font-weight:bold;
+  background: linear-gradient(135deg, #38bdf8, #22c55e);
+  color: #020617;
+  font-weight: bold;
+}
+
+.btn:hover {
+  transform: scale(1.05);
 }
 
 .btn-outline {
-  border:1px solid var(--accent);
-  padding:10px 16px;
-  border-radius:6px;
-  color:var(--accent);
-  text-decoration:none;
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.btn-outline:hover {
+  background: #38bdf8;
+  color: #020617;
 }
 
 /* CARDS */
 .card {
-  background:rgba(30,41,59,0.6);
-  backdrop-filter:blur(10px);
-  padding:18px;
-  border-radius:12px;
-  margin-top:15px;
-  border:1px solid rgba(56,189,248,0.15);
-  transition:.25s;
+  background: rgba(30, 41, 59, 0.6);
+  backdrop-filter: blur(12px);
+  padding: 18px;
+  border-radius: 12px;
+  margin-top: 15px;
+  border: 1px solid rgba(56,189,248,0.15);
+  transition: all 0.25s ease;
 }
 
 .card:hover {
-  transform:translateY(-6px);
-  border-color:var(--accent);
+  transform: translateY(-6px);
+  border-color: #38bdf8;
 }
 
 /* GRID */
 .grid {
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
 }
 
-/* SKILL CHIPS */
-.skills {
-  display:flex;
-  flex-wrap:wrap;
-  gap:10px;
-}
-
-.skill {
-  padding:6px 12px;
-  border-radius:20px;
-  background:rgba(56,189,248,0.1);
-  border:1px solid rgba(56,189,248,0.3);
-  font-size:13px;
-}
-
-/* PROJECT BUTTON */
+/* PROJECT */
 .project a {
-  display:inline-block;
-  margin-top:10px;
-  padding:6px 12px;
-  background:var(--accent);
-  color:#020617;
-  border-radius:5px;
-  text-decoration:none;
-  font-size:13px;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 7px 14px;
+  background: #38bdf8;
+  color: #020617;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+/* TITLES */
+.section-title {
+  margin-top: 20px;
+  color: #38bdf8;
 }
 
 /* CERT */
-.cert-card { text-align:center; }
+.cert-card {
+  text-align: center;
+}
 
 .cert-badge {
-  width:120px;
-  margin-bottom:10px;
+  width: 140px;
+  margin-bottom: 10px;
 }
 
 .cert-date {
-  font-size:13px;
-  color:#94a3b8;
+  color: #94a3b8;
+  font-size: 13px;
 }
 
 .verify-btn {
-  display:inline-block;
-  margin-top:10px;
-  padding:8px 12px;
-  background:var(--accent2);
-  color:#020617;
-  border-radius:6px;
-  text-decoration:none;
-  font-weight:bold;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 9px 14px;
+  background: #22c55e;
+  color: #020617;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
 }
+
+/* CONTACT */
+.email-link { color: #22d3ee; }
+.phone-link { color: #4ade80; }
 
 /* FOOTER */
 footer {
-  text-align:center;
-  padding:15px;
-  font-size:14px;
-  background:#020617;
+  text-align: center;
+  padding: 15px;
+  background: #020617;
+  font-size: 14px;
 }
 </style>
 </head>
@@ -179,6 +184,7 @@ footer {
 <nav>
 <a href="#about">About</a>
 <a href="#skills">Skills</a>
+<a href="#experience">Experience</a>
 <a href="#projects">Projects</a>
 <a href="#certifications">Certifications</a>
 <a href="#contact">Contact</a>
@@ -186,52 +192,80 @@ footer {
 
 <section class="hero">
 <h1>Venkata Pavan Kandula</h1>
-<p>DevOps Engineer | AWS • Kubernetes • CI/CD • Terraform</p>
+<h2>DevOps Engineer II | AWS • Kubernetes • CI/CD • Terraform</h2>
+<p>Building scalable cloud systems & automated pipelines</p>
 
 <div class="buttons">
-<a href="#projects" class="btn">Projects</a>
+<a href="#projects" class="btn">View Projects</a>
 <a href="https://github.com/Pavankandula96" target="_blank" class="btn-outline">GitHub</a>
 <a href="https://www.linkedin.com/in/venkata-pavan-kandula" target="_blank" class="btn-outline">LinkedIn</a>
+
+<a href="https://pavankandula96.github.io/venkata-pavan-kandula-portfolio/assets/Venkata_Pavan_Resume.pdf" 
+   target="_blank" class="btn">
+Download Resume
+</a>
 </div>
 </section>
 
 <section id="about">
-<h2>About</h2>
+<h2>About Me</h2>
 <div class="card">
 <p>
-DevOps Engineer with 4+ years experience. Reduced release cycles by 40% and automated workflows saving 8–10 hours/week.
+DevOps Engineer with 4+ years experience. Reduced release cycles by 40% and automated manual work saving 8–10 hours/week.
 </p>
 </div>
 </section>
 
 <section id="skills">
 <h2>Skills</h2>
-<div class="card skills">
-<span class="skill">AWS</span>
-<span class="skill">Kubernetes</span>
-<span class="skill">Docker</span>
-<span class="skill">Terraform</span>
-<span class="skill">Jenkins</span>
-<span class="skill">GitHub Actions</span>
-<span class="skill">Linux</span>
-<span class="skill">Python</span>
+<div class="card">
+AWS • Kubernetes • Docker • Terraform • Jenkins • GitHub Actions • Linux • Python
+</div>
+</section>
+
+<section id="experience">
+<h2>Experience</h2>
+<div class="card">
+<h3>TCS — AWS DevOps Engineer</h3>
+<ul>
+<li>Managed AWS infra for 100+ services</li>
+<li>Reduced deployment time by 40%</li>
+<li>Built CI/CD pipelines</li>
+<li>Automated infra using Terraform</li>
+</ul>
 </div>
 </section>
 
 <section id="projects">
 <h2>Projects</h2>
 
+<h3 class="section-title">Professional Projects</h3>
 <div class="grid">
 
 <div class="card project">
-<h4>3-Tier Kubernetes App</h4>
-<p>Microservices deployment on AWS EKS using Docker + Kubernetes.</p>
+<h4>Enterprise CI/CD Platform</h4>
+<p>Designed scalable CI/CD pipelines using Jenkins and GitHub Actions.</p>
+</div>
+
+<div class="card project">
+<h4>Infrastructure Automation</h4>
+<p>Provisioned AWS infrastructure using Terraform, reducing manual effort by 80%.</p>
+</div>
+
+</div>
+
+<h3 class="section-title">Personal Projects</h3>
+<div class="grid">
+
+<div class="card project">
+<h4>3-Tier Kubernetes Application</h4>
+<p>Built and deployed microservices using Docker, Kubernetes (EKS), and AWS.</p>
 <a href="https://github.com/Pavankandula96" target="_blank">View Code</a>
 </div>
 
 <div class="card project">
-<h4>CI/CD Automation</h4>
-<p>Automated build + deploy pipeline using Jenkins & Docker.</p>
+<h4>CI/CD Pipeline Automation</h4>
+<p>Automated deployment pipeline using Jenkins, Docker, and GitHub.</p>
 <a href="https://github.com/Pavankandula96" target="_blank">View Code</a>
 </div>
 
@@ -239,22 +273,30 @@ DevOps Engineer with 4+ years experience. Reduced release cycles by 40% and auto
 </section>
 
 <section id="certifications">
-<h2>Certification</h2>
+<h2>Certifications</h2>
+
+<div class="grid">
 
 <div class="card cert-card">
 
-<img src="assets/aws-devops-badge.png" class="cert-badge">
+<img src="assets/aws-devops-badge.png" 
+     alt="AWS DevOps Engineer Professional Badge" 
+     class="cert-badge">
 
 <h4>AWS Certified DevOps Engineer – Professional</h4>
 
 <p class="cert-date">
-Apr 18, 2026 – Apr 18, 2029
+Issued: April 18, 2026<br>
+Valid Till: April 18, 2029
 </p>
 
-<a href="https://www.credly.com/badges/8d53ab72-a454-4977-829e-0dfb6bee6a44/public_url"
-target="_blank" class="verify-btn">
-Verify
+<a href="https://www.credly.com/badges/8d53ab72-a454-4977-829e-0dfb6bee6a44/public_url" 
+   target="_blank" 
+   class="verify-btn">
+Verify Credential
 </a>
+
+</div>
 
 </div>
 </section>
@@ -262,13 +304,13 @@ Verify
 <section id="contact">
 <h2>Contact</h2>
 <div class="card">
-<p>Email: pavankandula62@gmail.com</p>
-<p>Phone: +91-8341950542</p>
+<p>Email: <a href="mailto:pavankandula62@gmail.com" class="email-link">pavankandula62@gmail.com</a></p>
+<p>Phone: <a href="tel:+918341950542" class="phone-link">+91-8341950542</a></p>
 </div>
 </section>
 
 <footer>
-© 2026 Venkata Pavan Kandula
+<p>© 2026 Venkata Pavan Kandula</p>
 </footer>
 
 </body>
