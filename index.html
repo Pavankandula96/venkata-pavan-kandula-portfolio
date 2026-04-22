@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Venkata Pavan Kandula | DevOps Engineer</title>
+<title>Venkata Pavan Kandula | AWS DevOps Engineer</title>
 
 <style>
 html { scroll-behavior: smooth; }
@@ -15,7 +15,6 @@ body {
   color: #e2e8f0;
 }
 
-/* NAV */
 nav {
   position: fixed;
   width: 100%;
@@ -34,7 +33,6 @@ nav a {
   font-size: 14px;
 }
 
-/* SECTION */
 section {
   padding: 60px 20px;
   max-width: 1100px;
@@ -42,7 +40,6 @@ section {
   scroll-margin-top: 80px;
 }
 
-/* HERO */
 .hero {
   text-align: center;
   padding-top: 110px;
@@ -55,7 +52,6 @@ section {
   font-size: 18px;
 }
 
-/* BUTTONS */
 .buttons {
   display: flex;
   justify-content: center;
@@ -81,7 +77,6 @@ section {
   color: #38bdf8;
 }
 
-/* CARDS */
 .card {
   background: rgba(30, 41, 59, 0.6);
   backdrop-filter: blur(12px);
@@ -91,14 +86,12 @@ section {
   border: 1px solid rgba(56,189,248,0.15);
 }
 
-/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
 }
 
-/* PROJECT */
 .project a {
   display: inline-block;
   margin-top: 10px;
@@ -110,7 +103,11 @@ section {
   font-size: 13px;
 }
 
-/* CERT */
+.section-title {
+  color: #38bdf8;
+  margin-top: 20px;
+}
+
 .cert-card { text-align: center; }
 
 .cert-badge {
@@ -134,7 +131,6 @@ section {
   font-weight: bold;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 15px;
@@ -161,17 +157,11 @@ footer {
 <div class="buttons">
 <a href="#projects" class="btn">View Projects</a>
 
-<a href="https://github.com/Pavankandula96" target="_blank" class="btn-outline">
-GitHub
-</a>
+<a href="https://github.com/Pavankandula96" target="_blank" class="btn-outline">GitHub</a>
 
-<a href="https://www.linkedin.com/in/venkata-pavan-kandula" target="_blank" class="btn-outline">
-LinkedIn
-</a>
+<a href="https://www.linkedin.com/in/venkata-pavan-kandula" target="_blank" class="btn-outline">LinkedIn</a>
 
-<a onclick="downloadResume()" class="btn">
-Download Resume
-</a>
+<a onclick="downloadResume()" class="btn">Download Resume</a>
 </div>
 </section>
 
@@ -203,13 +193,39 @@ AWS • Kubernetes • Docker • Terraform • Jenkins • GitHub Actions • L
 
 <section id="projects">
 <h2>Projects</h2>
+
+<h3 class="section-title">Professional Projects</h3>
 <div class="grid">
+
+<div class="card">
+<h4>Enterprise CI/CD Platform</h4>
+<p>Designed and implemented scalable CI/CD pipelines using Jenkins and GitHub Actions.</p>
+</div>
+
+<div class="card">
+<h4>Infrastructure Automation</h4>
+<p>Automated AWS infrastructure provisioning using Terraform, reducing manual effort by 80%.</p>
+</div>
+
+</div>
+
+<h3 class="section-title">Personal Projects</h3>
+<div class="grid">
+
 <div class="card project">
-<h4>3-Tier Kubernetes App</h4>
-<p>Microservices deployment using Docker & Kubernetes.</p>
-<a href="https://github.com/Pavankandula96">View Code</a>
+<h4>3-Tier Kubernetes Application</h4>
+<p>Built and deployed microservices using Docker, Kubernetes (EKS), and AWS.</p>
+<a href="https://github.com/Pavankandula96" target="_blank">View Code</a>
 </div>
+
+<div class="card project">
+<h4>CI/CD Pipeline Automation</h4>
+<p>Automated deployment pipeline using Jenkins, Docker, and GitHub.</p>
+<a href="https://github.com/Pavankandula96" target="_blank">View Code</a>
 </div>
+
+</div>
+
 </section>
 
 <section id="certifications">
