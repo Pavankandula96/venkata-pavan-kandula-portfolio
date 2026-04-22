@@ -82,23 +82,38 @@ section {
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 15px;
-}
-
-.project a {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 8px 15px;
-  background: #22c55e;
-  color: #020617;
-  border-radius: 5px;
-  text-decoration: none;
-  font-weight: bold;
+  gap: 20px;
 }
 
 .section-title {
   margin-top: 30px;
   color: #38bdf8;
+}
+
+/* Certification Styling */
+.cert-card {
+  text-align: center;
+}
+
+.cert-badge {
+  width: 160px;
+  margin-bottom: 15px;
+}
+
+.cert-date {
+  color: #94a3b8;
+  font-size: 14px;
+}
+
+.verify-btn {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 16px;
+  background: #22c55e;
+  color: #020617;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 .email-link { color: #22d3ee; }
@@ -173,58 +188,45 @@ AWS • Kubernetes • Docker • Terraform • Jenkins • GitHub Actions • L
 <section id="projects">
 <h2>Projects</h2>
 
-<h3 class="section-title">Professional Projects</h3>
 <div class="grid">
-
-<div class="card project">
+<div class="card">
 <h4>Enterprise CI/CD Platform</h4>
-<p>Designed scalable CI/CD pipelines using Jenkins and GitHub Actions.</p>
+<p>Built scalable CI/CD pipelines using Jenkins & GitHub Actions.</p>
 </div>
 
-<div class="card project">
+<div class="card">
 <h4>Infrastructure Automation</h4>
-<p>Provisioned AWS infrastructure using Terraform, reducing manual effort by 80%.</p>
+<p>Provisioned AWS infra using Terraform, reducing manual work by 80%.</p>
 </div>
-
-</div>
-
-<h3 class="section-title">Personal Projects</h3>
-<div class="grid">
-
-<div class="card project">
-<h4>3-Tier Kubernetes Application</h4>
-<p>Deployed microservices using Docker, Kubernetes, AWS.</p>
-<a href="https://github.com/Pavankandula96" target="_blank">View Code</a>
-</div>
-
-<div class="card project">
-<h4>CI/CD Pipeline</h4>
-<p>Automated deployment using Jenkins + Docker + GitHub.</p>
-<a href="https://github.com/Pavankandula96" target="_blank">View Code</a>
-</div>
-
 </div>
 </section>
 
-<!-- ✅ CERTIFICATION SECTION -->
+<!-- 🔥 CERTIFICATION SECTION -->
 <section id="certifications">
 <h2>Certifications</h2>
 
 <div class="grid">
 
-<div class="card project">
+<div class="card cert-card">
+
+<img src="assets/aws-devops-badge.png" 
+     alt="AWS DevOps Engineer Professional Badge" 
+     class="cert-badge">
+
 <h4>AWS Certified DevOps Engineer – Professional</h4>
 
-<p>
-Issued: April 18, 2026 <br>
+<p class="cert-date">
+Issued: April 18, 2026<br>
 Valid Till: April 18, 2029
 </p>
 
 <p>
-Advanced certification validating expertise in CI/CD automation, infrastructure as code, monitoring, and AWS cloud operations.
+Advanced certification demonstrating expertise in CI/CD, automation, monitoring, and AWS infrastructure.
 </p>
 
-<a href="https://www.credly.com/badges/8d53ab72-a454-4977-829e-0dfb6bee6a44/public_url" target="_blank">
+<a href="https://www.credly.com/badges/8d53ab72-a454-4977-829e-0dfb6bee6a44/public_url" 
+   target="_blank" 
+   class="verify-btn">
 Verify Credential
 </a>
 
