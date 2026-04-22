@@ -6,9 +6,7 @@
 <title>Venkata Pavan Kandula | DevOps Engineer</title>
 
 <style>
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   margin: 0;
@@ -33,12 +31,22 @@ nav a {
   color: #38bdf8;
   margin: 0 12px;
   text-decoration: none;
-  font-weight: 500;
   font-size: 14px;
 }
 
-nav a:hover {
-  color: #22d3ee;
+/* FLOAT RESUME BUTTON */
+.resume-float {
+  position: fixed;
+  top: 70px;
+  right: 15px;
+  background: #22c55e;
+  color: #020617;
+  padding: 10px 14px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 1001;
 }
 
 /* SECTION */
@@ -46,13 +54,13 @@ section {
   padding: 60px 20px;
   max-width: 1100px;
   margin: auto;
-  scroll-margin-top: 80px; /* FIX for navbar overlap */
+  scroll-margin-top: 80px;
 }
 
 /* HERO */
 .hero {
   text-align: center;
-  padding-top: 100px;
+  padding-top: 110px;
 }
 
 .hero h1 {
@@ -64,7 +72,6 @@ section {
   font-size: 18px;
 }
 
-/* BUTTONS */
 .buttons {
   display: flex;
   justify-content: center;
@@ -76,7 +83,6 @@ section {
   padding: 10px 18px;
   border-radius: 6px;
   text-decoration: none;
-  transition: 0.3s;
 }
 
 .btn {
@@ -85,18 +91,9 @@ section {
   font-weight: bold;
 }
 
-.btn:hover {
-  transform: scale(1.05);
-}
-
 .btn-outline {
   border: 1px solid #38bdf8;
   color: #38bdf8;
-}
-
-.btn-outline:hover {
-  background: #38bdf8;
-  color: #020617;
 }
 
 /* CARDS */
@@ -107,12 +104,11 @@ section {
   border-radius: 12px;
   margin-top: 15px;
   border: 1px solid rgba(56,189,248,0.15);
-  transition: all 0.25s ease;
+  transition: 0.25s;
 }
 
 .card:hover {
-  transform: translateY(-6px);
-  border-color: #38bdf8;
+  transform: translateY(-5px);
 }
 
 /* GRID */
@@ -141,9 +137,7 @@ section {
 }
 
 /* CERT */
-.cert-card {
-  text-align: center;
-}
+.cert-card { text-align: center; }
 
 .cert-badge {
   width: 140px;
@@ -175,12 +169,17 @@ footer {
   text-align: center;
   padding: 15px;
   background: #020617;
-  font-size: 14px;
 }
 </style>
 </head>
 
 <body>
+
+<!-- FLOAT RESUME -->
+<a href="https://pavankandula96.github.io/venkata-pavan-kandula-portfolio/assets/Venkata_Pavan_Resume.pdf"
+   target="_blank" class="resume-float">
+View Resume
+</a>
 
 <nav>
 <a href="#about">About</a>
@@ -194,16 +193,14 @@ footer {
 <section class="hero">
 <h1>Venkata Pavan Kandula</h1>
 <h2>DevOps Engineer II | AWS • Kubernetes • CI/CD • Terraform</h2>
-<p>Building scalable cloud systems & automated pipelines</p>
 
 <div class="buttons">
 <a href="#projects" class="btn">View Projects</a>
 <a href="https://github.com/Pavankandula96" target="_blank" class="btn-outline">GitHub</a>
 <a href="https://www.linkedin.com/in/venkata-pavan-kandula" target="_blank" class="btn-outline">LinkedIn</a>
-
-<a href="https://pavankandula96.github.io/venkata-pavan-kandula-portfolio/assets/Venkata_Pavan_Resume.pdf" 
+<a href="https://pavankandula96.github.io/venkata-pavan-kandula-portfolio/assets/Venkata_Pavan_Resume.pdf"
    target="_blank" class="btn">
-Download Resume
+View Resume
 </a>
 </div>
 </section>
@@ -211,9 +208,7 @@ Download Resume
 <section id="about">
 <h2>About Me</h2>
 <div class="card">
-<p>
-DevOps Engineer with 4+ years experience. Reduced release cycles by 40% and automated manual work saving 8–10 hours/week.
-</p>
+<p>DevOps Engineer with 4+ years experience. Reduced release cycles by 40% and automated manual work saving 8–10 hours/week.</p>
 </div>
 </section>
 
@@ -242,7 +237,6 @@ AWS • Kubernetes • Docker • Terraform • Jenkins • GitHub Actions • L
 
 <h3 class="section-title">Professional Projects</h3>
 <div class="grid">
-
 <div class="card project">
 <h4>Enterprise CI/CD Platform</h4>
 <p>Designed scalable CI/CD pipelines using Jenkins and GitHub Actions.</p>
@@ -252,12 +246,10 @@ AWS • Kubernetes • Docker • Terraform • Jenkins • GitHub Actions • L
 <h4>Infrastructure Automation</h4>
 <p>Provisioned AWS infrastructure using Terraform, reducing manual effort by 80%.</p>
 </div>
-
 </div>
 
 <h3 class="section-title">Personal Projects</h3>
 <div class="grid">
-
 <div class="card project">
 <h4>3-Tier Kubernetes Application</h4>
 <p>Built and deployed microservices using Docker, Kubernetes (EKS), and AWS.</p>
@@ -269,36 +261,17 @@ AWS • Kubernetes • Docker • Terraform • Jenkins • GitHub Actions • L
 <p>Automated deployment pipeline using Jenkins, Docker, and GitHub.</p>
 <a href="https://github.com/Pavankandula96" target="_blank">View Code</a>
 </div>
-
 </div>
 </section>
 
 <section id="certifications">
 <h2>Certifications</h2>
-
-<div class="grid">
-
 <div class="card cert-card">
-
-<img src="assets/aws-devops-badge.png" 
-     alt="AWS DevOps Engineer Professional Badge" 
-     class="cert-badge">
-
+<img src="assets/aws-devops-badge.png" class="cert-badge">
 <h4>AWS Certified DevOps Engineer – Professional</h4>
-
-<p class="cert-date">
-Issued: April 18, 2026<br>
-Valid Till: April 18, 2029
-</p>
-
-<a href="https://www.credly.com/badges/8d53ab72-a454-4977-829e-0dfb6bee6a44/public_url" 
-   target="_blank" 
-   class="verify-btn">
-Verify Credential
-</a>
-
-</div>
-
+<p class="cert-date">Issued: April 18, 2026<br>Valid Till: April 18, 2029</p>
+<a href="https://www.credly.com/badges/8d53ab72-a454-4977-829e-0dfb6bee6a44/public_url"
+target="_blank" class="verify-btn">Verify Credential</a>
 </div>
 </section>
 
@@ -314,14 +287,13 @@ Verify Credential
 <p>© 2026 Venkata Pavan Kandula</p>
 </footer>
 
-<!-- ✅ SCROLL FIX -->
+<!-- SCROLL FIX -->
 <script>
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
-
 window.addEventListener('load', function () {
-  window.scrollTo({ top: 0, behavior: 'instant' });
+  window.scrollTo({ top: 0 });
 });
 </script>
 
