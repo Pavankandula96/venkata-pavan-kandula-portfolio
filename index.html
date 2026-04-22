@@ -15,6 +15,7 @@ body {
   color: #e2e8f0;
 }
 
+/* NAV */
 nav {
   position: fixed;
   width: 100%;
@@ -33,6 +34,7 @@ nav a {
   font-size: 14px;
 }
 
+/* SECTION */
 section {
   padding: 60px 20px;
   max-width: 1100px;
@@ -40,6 +42,7 @@ section {
   scroll-margin-top: 80px;
 }
 
+/* HERO */
 .hero {
   text-align: center;
   padding-top: 110px;
@@ -52,6 +55,7 @@ section {
   font-size: 18px;
 }
 
+/* BUTTONS */
 .buttons {
   display: flex;
   justify-content: center;
@@ -77,6 +81,7 @@ section {
   color: #38bdf8;
 }
 
+/* CARDS */
 .card {
   background: rgba(30, 41, 59, 0.6);
   backdrop-filter: blur(12px);
@@ -86,12 +91,14 @@ section {
   border: 1px solid rgba(56,189,248,0.15);
 }
 
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 15px;
 }
 
+/* PROJECT */
 .project a {
   display: inline-block;
   margin-top: 10px;
@@ -103,11 +110,13 @@ section {
   font-size: 13px;
 }
 
+/* SECTION TITLE */
 .section-title {
   color: #38bdf8;
   margin-top: 20px;
 }
 
+/* CERT */
 .cert-card { text-align: center; }
 
 .cert-badge {
@@ -131,6 +140,23 @@ section {
   font-weight: bold;
 }
 
+/* CONTACT LINKS */
+.email-link {
+  color: #22d3ee;
+  text-decoration: none;
+}
+
+.phone-link {
+  color: #4ade80;
+  text-decoration: none;
+}
+
+.email-link:hover,
+.phone-link:hover {
+  text-decoration: underline;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
   padding: 15px;
@@ -156,11 +182,8 @@ footer {
 
 <div class="buttons">
 <a href="#projects" class="btn">View Projects</a>
-
 <a href="https://github.com/Pavankandula96" target="_blank" class="btn-outline">GitHub</a>
-
 <a href="https://www.linkedin.com/in/venkata-pavan-kandula" target="_blank" class="btn-outline">LinkedIn</a>
-
 <a onclick="downloadResume()" class="btn">Download Resume</a>
 </div>
 </section>
@@ -191,27 +214,25 @@ AWS • Kubernetes • Docker • Terraform • Jenkins • GitHub Actions • L
 </div>
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
 <h2>Projects</h2>
 
 <h3 class="section-title">Professional Projects</h3>
 <div class="grid">
-
 <div class="card">
 <h4>Enterprise CI/CD Platform</h4>
-<p>Designed and implemented scalable CI/CD pipelines using Jenkins and GitHub Actions.</p>
+<p>Designed scalable CI/CD pipelines using Jenkins and GitHub Actions.</p>
 </div>
 
 <div class="card">
 <h4>Infrastructure Automation</h4>
-<p>Automated AWS infrastructure provisioning using Terraform, reducing manual effort by 80%.</p>
+<p>Automated AWS infrastructure using Terraform, reducing manual effort by 80%.</p>
 </div>
-
 </div>
 
 <h3 class="section-title">Personal Projects</h3>
 <div class="grid">
-
 <div class="card project">
 <h4>3-Tier Kubernetes Application</h4>
 <p>Built and deployed microservices using Docker, Kubernetes (EKS), and AWS.</p>
@@ -223,27 +244,41 @@ AWS • Kubernetes • Docker • Terraform • Jenkins • GitHub Actions • L
 <p>Automated deployment pipeline using Jenkins, Docker, and GitHub.</p>
 <a href="https://github.com/Pavankandula96" target="_blank">View Code</a>
 </div>
-
 </div>
-
 </section>
 
+<!-- CERT -->
 <section id="certifications">
 <h2>Certification</h2>
 <div class="card cert-card">
 <img src="assets/aws-devops-badge.png" class="cert-badge">
 <h4>AWS Certified DevOps Engineer – Professional</h4>
 <p class="cert-date">Apr 2026 – Apr 2029</p>
-<a href="https://www.credly.com/badges/8d53ab72-a454-4977-829e-0dfb6bee6a44/public_url"
-class="verify-btn">Verify</a>
+<a href="https://www.credly.com/badges/8d53ab72-a454-4977-829e-0dfb6bee6a44/public_url" class="verify-btn">
+Verify
+</a>
 </div>
 </section>
 
+<!-- CONTACT (FIXED) -->
 <section id="contact">
 <h2>Contact</h2>
 <div class="card">
-<p>Email: pavankandula62@gmail.com</p>
-<p>Phone: +91-8341950542</p>
+
+<p>
+Email:
+<a href="mailto:pavankandula62@gmail.com" class="email-link">
+pavankandula62@gmail.com
+</a>
+</p>
+
+<p>
+Phone:
+<a href="tel:+918341950542" class="phone-link">
++91-8341950542
+</a>
+</p>
+
 </div>
 </section>
 
