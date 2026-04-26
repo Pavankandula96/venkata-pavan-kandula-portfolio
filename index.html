@@ -161,8 +161,6 @@ footer {
 <a href="#projects" class="btn">View Projects</a>
 <a href="https://github.com/Pavankandula96" target="_blank" class="btn-outline">GitHub</a>
 <a href="https://www.linkedin.com/in/venkata-pavan-kandula" target="_blank" class="btn-outline">LinkedIn</a>
-
-<!-- FIXED -->
 <a href="assets/Venkata_Pavan_Resume.pdf?v=2" download class="btn">Download Resume</a>
 </div>
 </section>
@@ -181,43 +179,53 @@ AWS • Kubernetes • Docker • Terraform • Jenkins • GitHub Actions • L
 </div>
 </section>
 
-<!-- UPDATED EXPERIENCE -->
 <section id="experience">
 <h2>Experience</h2>
 <div class="card">
 <h3>TCS — Senior DevOps / SRE Engineer</h3>
 <ul>
-
 <li>Designed and managed AWS EKS-based Kubernetes infrastructure supporting 100+ microservices with autoscaling, reducing over-provisioning by ~25%.</li>
-
-<li>Built and maintained CI/CD pipelines using GitHub Actions, Jenkins, and GitLab CI, reducing release cycle time by 40%.</li>
-
-<li>Implemented GitOps deployments using ArgoCD for multi-environment delivery (Dev → QA → UAT → Prod).</li>
-
-<li>Optimized AWS costs by ~30% using right-sizing, Reserved Instances, and Spot Instances.</li>
-
-<li>Automated infrastructure provisioning using Terraform with modular design and remote state.</li>
-
-<li>Designed disaster recovery strategies with RDS PITR, Aurora Multi-AZ, and cross-region replication.</li>
-
-<li>Implemented security using IAM, OPA/Gatekeeper, and container scanning (Trivy).</li>
-
-<li>Built monitoring systems using Prometheus, Grafana, Datadog, and ELK.</li>
-
-<li>Automated operations using Python and Bash, saving 8–10 hours weekly.</li>
-
-<li>Managed Kafka, RabbitMQ, RDS, and Elasticsearch for production workloads.</li>
-
+<li>Built and maintained CI/CD pipelines reducing release cycle time by 40%.</li>
+<li>Implemented GitOps deployments using ArgoCD.</li>
+<li>Optimized AWS costs by ~30%.</li>
+<li>Automated infrastructure using Terraform.</li>
+<li>Designed disaster recovery strategies.</li>
+<li>Implemented security best practices.</li>
+<li>Built monitoring systems using Prometheus, Grafana, ELK.</li>
+<li>Automated operations saving 8–10 hours weekly.</li>
+<li>Managed Kafka, RabbitMQ, RDS, Elasticsearch.</li>
 </ul>
 </div>
 </section>
 
+<!-- PROJECTS RESTORED -->
 <section id="projects">
 <h2>Projects</h2>
+
+<h3 class="section-title">Professional Projects</h3>
+<div class="grid">
+<div class="card">
+<h4>Enterprise CI/CD Platform</h4>
+<p>Designed scalable CI/CD pipelines using Jenkins and GitHub Actions.</p>
+</div>
+
+<div class="card">
+<h4>Infrastructure Automation</h4>
+<p>Automated AWS infrastructure using Terraform, reducing manual effort by 80%.</p>
+</div>
+</div>
+
+<h3 class="section-title">Personal Projects</h3>
 <div class="grid">
 <div class="card project">
 <h4>3-Tier Kubernetes Application</h4>
 <p>Built and deployed microservices using Docker, Kubernetes (EKS), and AWS.</p>
+<a href="https://github.com/Pavankandula96" target="_blank">View Code</a>
+</div>
+
+<div class="card project">
+<h4>CI/CD Pipeline Automation</h4>
+<p>Automated deployment pipeline using Jenkins, Docker, and GitHub.</p>
 <a href="https://github.com/Pavankandula96" target="_blank">View Code</a>
 </div>
 </div>
@@ -247,7 +255,6 @@ AWS • Kubernetes • Docker • Terraform • Jenkins • GitHub Actions • L
 if ('scrollRestoration' in history) {
   history.scrollRestoration = 'manual';
 }
-
 window.addEventListener('load', function () {
   window.scrollTo({ top: 0 });
 });
